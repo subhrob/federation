@@ -1,0 +1,9 @@
+type User @key(fields: "userid"){
+userid: ID!,
+name: String
+}
+
+type Query {
+users:[User]
+user(id: ID):User
+}
