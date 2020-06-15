@@ -29,6 +29,26 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+				<dependency>
+		    <groupId>com.graphql-java-kickstart</groupId>
+		    <artifactId>graphql-spring-boot-starter</artifactId>
+		    <version>5.10.0</version>
+		</dependency>
+
+
+
+
+		<dependency>
+    		<groupId>com.graphql-java-kickstart</groupId>
+    		<artifactId>graphiql-spring-boot-starter</artifactId>
+    		<version>5.10.0</version>
+    		<scope>runtime</scope>
+		</dependency>
+		<dependency>
+    		<groupId>com.apollographql.federation</groupId>
+    		<artifactId>federation-graphql-java-support</artifactId>
+    		<version>0.4.1</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

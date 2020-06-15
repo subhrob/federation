@@ -44,10 +44,6 @@
     		<version>5.10.0</version>
     		<scope>runtime</scope>
 		</dependency>
-
-<!-- to embed Playground tool -->
-
-
 		<dependency>
     		<groupId>com.apollographql.federation</groupId>
     		<artifactId>federation-graphql-java-support</artifactId>

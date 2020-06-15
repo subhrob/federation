@@ -1,0 +1,14 @@
+type Review {
+reviewid: ID!
+review: String
+user: User
+}
+
+type User @key(fields: "userid") @extends {
+    userid: ID! @external
+}
+
+type Query {
+reviews:[Review]
+reivew(reviewid: ID):Review
+}
