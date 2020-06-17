@@ -57,6 +57,10 @@ public class SchemaProvider extends DefaultGraphQLSchemaProvider implements Grap
   }
 
   private static User lookupUser(String id) {
-    return Data.getUsers().stream().filter(user -> user.getUserid().equals(id)).findAny().get();
+    User user =  Data.getUsers().stream().filter(var -> var.getUserid().equals(id)).findAny().get();
+    user.setReviews(Data.getReviews().stream()
+            .filter(review -> review.getUser().getUserid().equals(user.getUserid()))
+            .collect(Collectors.toList()));
+    return user;
   }
 }

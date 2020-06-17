@@ -8,7 +8,6 @@ const gateway = new ApolloGateway({
         {"name": "user", url: "http://localhost:4001/graphql"},
 	{"name": "review", url: "http://localhost:4002/graphql"}
     ]
-
 });
 
 const server = new ApolloServer({

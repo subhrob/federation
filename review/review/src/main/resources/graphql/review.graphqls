@@ -6,6 +6,7 @@ user: User
 
 type User @key(fields: "userid") @extends {
     userid: ID! @external
+    reviews: [Review]
 }
 
 type Query {
